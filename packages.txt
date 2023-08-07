@@ -1,0 +1,28 @@
+mkdir server
+cd server
+npm i -g nodemon
+npm i express body-parser bcrypt cors dotenv gridfs-stream multer multer-gridfs-storage helmet morgan jsonwebtoken mongoose 
+//body parser is for process request body
+//bcrypt for password encryption
+//cors for cross origin request
+//gridfs-stream for file upload
+//multer, multer-gridfs-storage for uploading files locally
+//helmet for request safety
+//morgan for login
+//jsonwebtoken for auth
+//mongoose for mongodb access
+npm init -y
+
+
+//Client
+npx create-react-app client
+cd client
+npm i react-redux @reduxjs/toolkit redux-persist react-dropzone dotenv formik yup react-router-dom@6 @mui/material @emotion/react @emotion/styled @mui/icons-material
+
+//toolkit makes it easy to use redux
+/*redux-persist is used to store the state into local storage.*/
+/*react-dropzone handles file upload on front end*/
+/*formik for form handling*/
+/*yup for validation*/
+/*react-router-dom@6 for handling react router dom*/
+
